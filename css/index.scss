@@ -1,0 +1,63 @@
+@import "px2rem";
+@import "la";
+.header {
+    width: rem(375px);
+    height: rem(150px);
+    background: red;
+    position: relative;
+}
+
+.remove {
+    width: rem(100px);
+    height: rem(150px);
+    line-height: rem(150px);
+    text-align: center;
+    background: orange;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    transform: translate(120%);
+    animation: last 1s linear forwards;
+}
+
+.shan {
+    position: absolute;
+    top: rem(-150px);
+    left: rem(50px);
+    width: rem(250px);
+    height: rem(120px);
+    border: 1px solid #666666;
+    position: relative;
+    display: none;
+    background: pink;
+}
+
+.mei {
+    margin-left: rem(80px);
+    margin-top: rem(25px);
+}
+
+.down {
+    width: rem(40px);
+    height: rem(40px);
+    background: skyblue;
+    position: absolute;
+    top: rem(50px);
+    left: rem(50px);
+}
+
+.up {
+    width: rem(40px);
+    height: rem(40px);
+    background: skyblue;
+    position: absolute;
+    top: rem(50px);
+    left: rem(150px);
+}
+
+@keyframes last {
+    to {
+        transform: translate(0)
+    }
+}
